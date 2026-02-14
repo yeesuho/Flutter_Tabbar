@@ -16,9 +16,9 @@ class _BottomNavigationBarScreenState extends State<BottomNavigationBarScreen> w
     // TODO: implement initState
     super.initState();
     tabController = TabController(length: TabInfo.TABS.length, vsync: this);
-    tabController.addListener(() => setState(() {
-
-    }),);
+    // tabController.addListener(() => setState(() {
+    //
+    // }),);
   }
   @override
   Widget build(BuildContext context) {

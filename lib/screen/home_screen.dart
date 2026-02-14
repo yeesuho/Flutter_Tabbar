@@ -3,6 +3,7 @@ import 'package:tab_bar/screen/apbbar_using_controller.dart';
 import 'package:tab_bar/screen/basic_appbar_tabbar_screen.dart';
 import 'package:tab_bar/screen/bottom_navigation_bar2.dart';
 import 'package:tab_bar/screen/bottom_navigation_bar3.dart';
+import 'package:tab_bar/screen/on_boarding_screen.dart';
 
 import 'bottom_navigation_bar.dart';
 import 'bottom_navigation_bar4.dart';
@@ -44,7 +45,10 @@ class _HomeScreenState extends State<HomeScreen> {
             }, child: Text("Bottom Navigation Bar3 Screen")),
             ElevatedButton(onPressed: () {
               Navigator.of(context).push(MaterialPageRoute(builder: (context) => BottomNavigationBar4(),));
-            }, child: Text("Bottom Navigation Bar4 & button Screen"))
+            }, child: Text("Bottom Navigation Bar4 & button Screen")),
+            ElevatedButton(onPressed: () {
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => OnBoardingScreen(),));
+            }, child: Text("OnBoarding Screen")),
           ],
         ),
       ),
