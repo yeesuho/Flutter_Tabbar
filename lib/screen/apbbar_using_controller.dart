@@ -43,6 +43,7 @@ class _ApbbarUsingControllerState extends State<ApbbarUsingController> with Tick
       body: Stack(
         children: [
           TabBarView(
+            // physics: NeverScrollableScrollPhysics(),
             controller: tabController,
               children: TabInfo.TABS.map((e) => Column(
                 mainAxisAlignment: MainAxisAlignment.center,
